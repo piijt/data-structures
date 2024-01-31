@@ -1,12 +1,11 @@
-// node struct
-class ListNode {
+export class ListNode {
   constructor(data) {
     this.data = data;
     this.next = null;
   }
 }
 
-class LinkedList {
+export class LinkedList {
   /**
    * Create a LinkedList.
    * @constructor
@@ -17,7 +16,7 @@ class LinkedList {
   }
 
   /**
-   * @description Checks if the linked list is empty (i.e., has no nodes).
+   * Checks if the linked list is empty (i.e., has no nodes).
    * @returns size of the list
    */
   size() {
@@ -31,7 +30,7 @@ class LinkedList {
   }
 
   /**
-   * @description Clears the linked list by removing all nodes.
+   * Clears the linked list by removing all nodes.
    * @returns void
    */
   clear() {
@@ -40,14 +39,14 @@ class LinkedList {
   }
 
   /**
-   * @description returns the first node in the linked list
+   * returns the first node in the linked list
    * @returns void
    */
   getHead() {
     return this.head;
   }
   /**
-   * @description returns the last node in the linked list
+   * returns the last node in the linked list
    * @returns
    */
   getTail() {
@@ -55,7 +54,7 @@ class LinkedList {
   }
 
   /**
-   * @description appends a node to the linked list
+   * appends a node to the linked list
    * @param {*} data
    * @returns void
    */
@@ -71,7 +70,7 @@ class LinkedList {
   }
 
   /**
-   * @description prepends a node to the linked list
+   * prepends a node to the linked list
    * @param {*} data
    * @returns void
    */
@@ -87,7 +86,7 @@ class LinkedList {
   }
 
   /**
-   * @description deletes a node with the given data
+   * deletes a node with the given data
    * @param {*} data
    * @returns boolean
    */
@@ -111,7 +110,7 @@ class LinkedList {
   }
 
   /**
-   * @description Converts the linked list into an array, allowing easy iteration and manipulation.
+   * Converts the linked list into an array, allowing easy iteration and manipulation.
    * @returns array
    */
   toArray() {
@@ -124,7 +123,7 @@ class LinkedList {
     return array;
   }
   /**
-   * @description returns the index of the data in the linked list
+   * returns the index of the data in the linked list
    * @param {*} data
    * @returns index
    */
@@ -142,7 +141,7 @@ class LinkedList {
   }
 
   /**
-   * @description
+   * Inserts node with the data provided at the index provided
    * @param {*} data
    * @param {*} index
    * @returns
@@ -178,7 +177,7 @@ class LinkedList {
   }
 
   /**
-   * @description Retrieves the data value at the specified index in the linked list.
+   * Retrieves the data value at the specified index in the linked list.
    * @param {*} index
    * @returns
    */
@@ -196,7 +195,7 @@ class LinkedList {
   }
 
   /**
-   * @description Updates the data value at the specified index in the linked list.
+   * Updates the data value at the specified index in the linked list.
    * @param {*} data
    * @param {*} index
    * @returns
@@ -224,7 +223,7 @@ class LinkedList {
   }
 
   /**
-   * @description Reverses the order of nodes in the linked list.
+   * Reverses the order of nodes in the linked list.
    * @returns
    */
   reverse() {
@@ -243,7 +242,7 @@ class LinkedList {
   }
 
   /**
-   * @description Searches for a node that satisfies the given condition specified by the callback function.
+   * Searches for a node that satisfies the given condition specified by the callback function.
    * @param {*} callback
    * @returns
    */
@@ -259,7 +258,7 @@ class LinkedList {
   }
 
   /**
-   * @description Removes duplicate nodes from the linked list, keeping only the first occurrence of each unique data value.
+   * Removes duplicate nodes from the linked list, keeping only the first occurrence of each unique data value.
    * @returns
    */
   removeDuplicates() {
@@ -281,7 +280,7 @@ class LinkedList {
   }
 
   /**
-   * @description Creates a new linked list containing a subset of nodes from the original list, starting from the node at the startIndex and ending at the node before the endIndex.
+   * Creates a new linked list containing a subset of nodes from the original list, starting from the node at the startIndex and ending at the node before the endIndex.
    * @param {*} startIndex
    * @param {*} endIndex
    * @returns
@@ -310,7 +309,7 @@ class LinkedList {
   }
 
   /**
-   * @description Concatenates another linked list to the end of the current list, effectively appending all nodes from the other list.
+   * Concatenates another linked list to the end of the current list, effectively appending all nodes from the other list.
    * @param {LinkedList} otherList
    * @returns {LinkedList}
    */
@@ -327,7 +326,7 @@ class LinkedList {
   }
 
   /**
-   * @description Executes a provided function once for each node in the linked list.
+   * Executes a provided function once for each node in the linked list.
    * @returns Array
    */
   toString() {
@@ -344,7 +343,7 @@ class LinkedList {
   }
 
   /**
-   * @description Executes a provided function once for each node in the linked list.
+   * Executes a provided function once for each node in the linked list.
    * @param {*} callback
    * @returns
    */
@@ -359,7 +358,7 @@ class LinkedList {
   }
 
   /**
-   * @description Creates a new linked list with the results of calling a provided function on every node in the linked list.
+   * Creates a new linked list with the results of calling a provided function on every node in the linked list.
    * @param {*} callback
    * @returns
    */
@@ -375,7 +374,7 @@ class LinkedList {
   }
 
   /**
-   * @description Creates a new linked list containing nodes that satisfy the condition specified by the callback function.
+   * Creates a new linked list containing nodes that satisfy the condition specified by the callback function.
    * @param {*} callback
    * @returns
    */
@@ -393,7 +392,7 @@ class LinkedList {
   }
 
   /**
-   * @description Applies a function against an accumulator and each node in the linked list to reduce it to a single value.
+   * Applies a function against an accumulator and each node in the linked list to reduce it to a single value.
    * @param {*} callback
    * @param {*} initialValue
    * @returns
@@ -424,7 +423,7 @@ class LinkedList {
   split(index) {
     // Implementation
   }
-  
+
   /**
    * Merges two sorted linked lists into a single sorted linked list.
    * @param {LinkedList} list1 - The first sorted linked list.
